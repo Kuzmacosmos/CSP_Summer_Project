@@ -6,8 +6,7 @@ from sph_to_cart import mod_sph_to_cart
 from refl_ray    import refl_ray
 from rot_helper  import rodrigues
 
-# ----- Finite point source version -----
-# ——— constants ———
+# CONSTANTS
 RECEIVER_POS = np.array([0.0, 0.0, 771.6])
 H_POSITIONS = {
     'H1': np.array([-222.5, -97.5, 199]),
@@ -19,12 +18,6 @@ a = 143
 mirror_diam = 150  # For visualization only. Physical ~25 mm
 delta_z = 7
 HU_COLORS = {'H1': 'lightpink','H2': 'lightgreen','H3': 'lightblue','H4': 'lightgray'}
-
-
-# -------------------- Point-source controls --------------------
-# USE_POINT_SOURCE   = True                 # if is point source at a finite dist
-# LED_DISTANCE_MM    = 9800                 # user-changeable
-# LED_DIVERGENCE_DEG = 6.5                  # full divergence angle in degrees
 
 # chief ray hits the XY geometric centre at z=0
 _XC = np.mean([H_POSITIONS[k][0] for k in H_POSITIONS])
@@ -169,11 +162,11 @@ def compute_heliostat_data(h_key, tilt_deg, datetime_str, lat, lon, tz_off,
     filled_all = []
     ring_all = []
     for C, N in zip(mi_final, n_mi_final):
-        # (A) dense fill for footprints
+        # dense fill for footprints
         filled_pts = sample_disc_points_2d(center=C, normal=N, radius=12.5, spacing=0.5)
         filled_all.append(_project_hits(filled_pts, N, s_hat, L, use_point_source))
 
-        # (B) sparse ring for wireframe look
+        # sparse ring for wireframe look
         ring_pts = sample_disc_points(center=C, normal=N, radius=12.5, n_radial=2, n_angular=360)
         ring_all.append(_project_hits(ring_pts, N, s_hat, L, use_point_source))
 

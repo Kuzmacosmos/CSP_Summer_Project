@@ -44,7 +44,7 @@ app.layout = html.Div([
         html.Div(id='elevation-display', style={"margin":"10px 0", "font-weight":"bold"})
     ]),
 
-    # ——— NEW: Source model + LED parameters ———
+    # NEW: Source model + LED parameters
     html.Div([
         html.Label("Source model:"),
         dcc.RadioItems(
