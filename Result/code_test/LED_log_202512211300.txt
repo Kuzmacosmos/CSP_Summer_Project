@@ -1,0 +1,43 @@
+At 2025-12-21 13:00:00 local time, (51.49, -0.177)
+
+----- Simulation configurations -----
+Using point-source model: True, LED distance (mm): 9800, full divergence (deg): 6.5
+Normalised chief-axis vector (s_hat): [ 0.23870268  0.94088357 -0.2403313 ]
+Tilts (degrees): [10.5, 9, 11.6, 9]
+
+----- Performance Metrics -----
+Global centroid coordinate (mm): [  4.4531466   15.99952758 771.6       ]
+Centroid offset (mm): 16.60769091267015
+Spot spread (mm): 13.518534021097597
+Sum bright spot areas (no overlap, mm^2): 3114.41
+Union bright spot area (with overlap, mm^2): 1640.72
+Pixel intensity scaling factor: 2370.8
+Preliminary optical transmission factor = 0.9801
+Predicted pixel intensity (all inside, a.u.):  5.52938e+06
+Predicted pixel intensity (clipped to frame, a.u.): 5.52898e+06
+
+----- Per-mirror log -----
+H1 mirrors target normals: [[ 0.26823747 -0.6105236   0.74519097]
+ [-0.06393223 -0.51084526  0.85729212]]
+H1 mirrors target positions: [[-350.94892044  -62.66492731  248.19915678]
+ [ -92.62094285 -140.18465476  161.01822491]]
+H1 mirrors reflection unit rays: [[0.56917983 0.11598921 0.81399068]
+ [0.13781962 0.2454329  0.9595668 ]]
+H2 mirrors target normals: [[-0.26295468 -0.53846368  0.80056961]
+ [-0.54710608 -0.48914245  0.67927505]]
+H2 mirrors target positions: [[  95.78496574  -78.72646527  149.16504898]
+ [ 353.54460891 -123.46677768  259.19386365]]
+H2 mirrors reflection unit rays: [[-0.15136017  0.13900117  0.97865662]
+ [-0.55102954  0.20837328  0.80805138]]
+H3 mirrors target normals: [[ 0.2314449  -0.31441975  0.92063754]
+ [-0.15513154 -0.21271154  0.96472172]]
+H3 mirrors target positions: [[-358.34010776 -563.53517294  221.12007342]
+ [ -86.12569872 -635.15474605  190.07744143]]
+H3 mirrors reflection unit rays: [[0.42126407 0.66327127 0.618553  ]
+ [0.09560329 0.74895258 0.65569051]]
+H4 mirrors target normals: [[-0.35780992 -0.24340845  0.90151228]
+ [-0.62885538 -0.20216015  0.75078105]]
+H4 mirrors target positions: [[ 101.11118237 -580.35089444  136.41730944]
+ [ 346.98216053 -617.76808575  273.14874386]]
+H4 mirrors reflection unit rays: [[-0.12361142  0.68151955  0.72128449]
+ [-0.3844714   0.7212178   0.57621752]]
